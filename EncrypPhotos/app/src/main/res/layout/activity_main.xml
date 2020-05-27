@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/cryp"
+        android:layout_width="159dp"
+        android:layout_height="65dp"
+        android:src="@drawable/logohd1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textSize="11dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="32dp"
+        android:text="Produced by Murat Yavuz"
+        android:textColor="@android:color/white"
+
+        />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/pick_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="pick_image"
+        android:text="ADD PICTURE" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+</LinearLayout>
